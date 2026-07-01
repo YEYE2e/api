@@ -5,7 +5,7 @@ description = "FastAPI Cloud Application"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "fastapi>=0.115.0",
+    "fastapi[standard]>=0.115.0",
 ]
 
 [build-system]
