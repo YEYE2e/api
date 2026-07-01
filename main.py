@@ -13,7 +13,7 @@ def read_item(item_id: int):
    return {"item_id": item_id}
 
 @app.get("/items/")
-def read_item(skip: int = 0, limit: int = 10, q: str | None = None):
+def read_items(skip: int = 0, limit: int = 10, q: str | None = None):
    results = fake_items_db[skip : skip + limit]
    if q:
       results.append({"item_name": q})
